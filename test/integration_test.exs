@@ -76,7 +76,7 @@ defmodule IntegrationTest do
   end
 
   defp api_config(base_url),
-    do: [base_url: base_url, access_key: "LVrIRflwDtt0qVJcPIO1zn5D2"]
+    do: [base_url: base_url, access_key: System.fetch_env!("ACCESS_KEY")]
 
   defp base_url, do: "https://rest.messagebird.com"
 end

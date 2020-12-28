@@ -3,6 +3,7 @@ name: CI
 env:
   MIX_ENV: test
   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  ACCESS_KEY: ${{ secrets.ACCESS_KEY }}
 
 on:
   push:
